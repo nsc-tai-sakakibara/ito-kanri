@@ -62,18 +62,21 @@
                     <label for="color">色を選択してください</label>
                     <input id="color" name="color" type="color" placeholder="色" class="color-field">
                 </div>
-
+                
                 <div class="group">
                     <label for="brand">メーカー</label>
                     <input id="brand" name="brand" type="text" placeholder="メーカー" class="field">
+                    
                 </div>
 
                 <div class="group">
                     <label for="hinban">品番</label>
                     <input id="hinban" name="hinban" type="number" placeholder="123" class="field">
+                    
                 </div>
 
-                <button id="add-ito" class="button btn-main" type='submit'>糸を追加する</button>
+                <button id="add-ito" type="submit" class="button btn-main">糸を追加する</button>
+                <button id="clear-ito" onclick="itoController.clearIto(event)">糸を削除する</button>
 
             </form>
 
